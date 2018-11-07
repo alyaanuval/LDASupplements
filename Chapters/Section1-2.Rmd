@@ -1,13 +1,23 @@
 # Terms by Chapter
 
-## Chapter 2 Terms
+## Chapter 1 Terms
 
 ```{r}
 library(pander)
+section1.1 <- read.csv("~/R project/LDAGlossary/csv/Section1-1.csv", header=TRUE,
+                       na.strings=c("."), stringsAsFactors=FALSE)
+table1.1 <- cbind(section1.1[1], section1.1[2])
+names(table1.1) <- c("Term", "Description")
+pander(table1.1)
+```
+
+## Chapter 2 Terms
+
+```{r}
 section1.2 <- read.csv("~/R project/LDAGlossary/csv/Section1-2.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.2 <- cbind(section1.2[1], section1.2[2])
-names(table1.2) <- c("Term", "Definition")
+names(table1.2) <- c("Term", "Description")
 pander(table1.2)
 ```
 
