@@ -1,18 +1,8 @@
-# Terms by First Definition
+# Terms and Chapter First Defined
 
 ```{r}
-section2.1 <- read.csv("~/R project/LDAGlossary/csv/Section2-1.csv", header=TRUE,
-                       na.strings=c("."), stringsAsFactors=FALSE)
-table2.1 <- cbind(section2.1[1], section2.1[2])
-names(table2.1) <- c("Term", "Chapter first defined")
-
-section2.2 <- read.csv("~/R project/LDAGlossary/csv/Section2-2.csv", header=TRUE,
-                       na.strings=c("."), stringsAsFactors=FALSE)
-table2.2 <- cbind(section2.2[1], section2.2[2])
-names(table2.2) <- c("Term", "Chapter first defined")
-
-table2 <- rbind(table2.1, table2.2)
-sort.table2 <- table2[order(table2$Term), ]
+table2 <- cbind(glossary[, 1], glossary[, 3])
+sort.table2 <- table2[order(table2[,1]), ]
 pander(sort.table2)
 ```
 
