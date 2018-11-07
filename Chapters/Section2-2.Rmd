@@ -1,0 +1,10 @@
+# Terms by First Definition
+
+```{r}
+section2.2 <- read.csv("~/R project/LDAGlossary/csv/Section2-2.csv", header=TRUE,
+                       na.strings=c("."), stringsAsFactors=FALSE)
+table2.2 <- cbind(section2.2[1], section2.2[2])
+names(table2.2) <- c("Term", "Chapter first defined")
+pander(table2.2)
+```
+

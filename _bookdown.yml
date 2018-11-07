@@ -1,5 +1,8 @@
 book_filename: "LDAGlossary"
-delete_merged_file: true
+output_dir: "docs"
+rmd_files: ["index.Rmd", 
+           "Chapters/Section1-2.Rmd",
+           "Chapters/Section2-2.Rmd"]
 language:
   ui:
     chapter_name: "Chapter "
