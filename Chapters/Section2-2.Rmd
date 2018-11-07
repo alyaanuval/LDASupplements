@@ -1,8 +1,0 @@
-# Terms and Chapter First Defined
-
-```{r}
-table2 <- cbind(glossary[, 1], glossary[, 3])
-sort.table2 <- table2[order(table2[,1]), ]
-pander(sort.table2)
-```
-

@@ -1,0 +1,18 @@
+# Terms and Chapter First Defined
+
+```{r}
+# Chapter 1
+table2.1 <- cbind(chapter1[, 1], chapter1[, 3])
+
+# Chapter 2
+table2.2 <- cbind(chapter2[, 1], chapter2[, 3])
+
+# Concatenate tables
+table2 <- rbind(table2.1, table2.2)
+
+# Sort alphabetically
+sort.table2 <- table2[order(table2[,1]), ]
+
+pander(sort.table2)
+```
+

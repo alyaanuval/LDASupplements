@@ -84,10 +84,24 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-11-06}
+  \date{2018-11-07}
 
 \usepackage{booktabs}
 
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -95,6 +109,44 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\chapter{Making Changes}\label{making-changes}
+
+First, open up our repository on GitHub
+\href{https://github.com/alyaanuval/LDAGlossary/issues}{here}.
+
+\section{Changing terms within exsiting
+chapters}\label{changing-terms-within-exsiting-chapters}
+
+\begin{itemize}
+\tightlist
+\item
+  Click on the issues tab.
+\item
+  Click on ``create an issue''.
+\item
+  Indicate which chapters you want to make changes to in the title.
+\item
+  Specify the terms and definitions you wish to change, add or remove.
+\item
+  Click ``Submit new issue''.
+\end{itemize}
+
+\section{Uploading new chapters}\label{uploading-new-chapters}
+
+\begin{itemize}
+\tightlist
+\item
+  Click on the issues tab.
+\item
+  Click on ``create an issue''.
+\item
+  Indicate which chapters you want to make changes to in the title.
+\item
+  Click on ``selecting them'' and upload the excel file and csv file.
+\item
+  Click ``Submit new issue''.
+\end{itemize}
+
 \chapter{Terms and Descriptions by
 Chapter}\label{terms-and-descriptions-by-chapter}
 
@@ -213,12 +265,6 @@ rating variables\strut
 \end{minipage} & \begin{minipage}[t]{0.42\columnwidth}\centering\strut
 Externally available variables useful in setting insurance rates and
 premiums\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.41\columnwidth}\centering\strut
-claim\strut
-\end{minipage} & \begin{minipage}[t]{0.42\columnwidth}\centering\strut
-compensation from insurer to insured upon the occurrence of an insured
-event\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
