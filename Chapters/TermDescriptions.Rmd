@@ -1,21 +1,25 @@
 # Terms and Descriptions by Chapter
 
-## Chapter 1 Terms
+## Chapter 1 Introduction to Loss Data Analytics
 
 ```{r}
 library(pander)
 chapter1 <- read.csv("~/R project/LDAGlossary/csv/Chapter1.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
-pander(table1.1)
+final.table1.1 <- as.data.frame(table1.1)
+names(final.table1.1) <- c("Term", "Description")
+pander(final.table1.1)
 ```
 
-## Chapter 2 Terms
+## Chapter 2 Frequency Modeling
 
 ```{r}
 chapter2 <- read.csv("~/R project/LDAGlossary/csv/Chapter2.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.2 <- cbind(chapter2[, 1], chapter2[, 2])
-pander(table1.2)
+final.table1.2 <- as.data.frame(table1.2)
+names(final.table1.2) <- c("Term", "Description")
+pander(final.table1.2)
 ```
 

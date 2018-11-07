@@ -1,8 +1,8 @@
 ﻿What is being described,Description,"Chapter 
 first mentioned"
 claim,compensation from insurer to insured upon the occurrence of an insured event,
-Frequency,how often claims arise or how often insured event occurs,2
-Severity,amount of each payment for an insured event ,2
+frequency,how often claims arise or how often insured event occurs,2
+severity,amount of each payment for an insured event ,2
 expected cost,expected number of claims (frequency) times expected amount per claim (severity),2
 binomial distribution,"discrete frequency distribution and member of (a, b, 0) class; for number of successes in a fixed number of independent identical trials with binary outcomes",2
 negative binomial distribution,"discrete frequency distribution and member of (a, b, 0) class; for number of successes until we observe the  r-th failure in independent identical trials with binary outcomes",

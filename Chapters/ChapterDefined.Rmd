@@ -10,9 +10,15 @@ table2.2 <- cbind(chapter2[, 1], chapter2[, 3])
 # Concatenate tables
 table2 <- rbind(table2.1, table2.2)
 
-# Sort alphabetically
-sort.table2 <- table2[order(table2[,1]), ]
+# Sort alphabetically --> do not change
+sort.table2 <- table2[order(table2[,1]), ] 
 
-pander(sort.table2)
+# Remove duplicates --> do not change
+library(dplyr)
+final.table2 <- as.data.frame(sort.table2)
+names(final.table2) <- c("Term", "Chapter first defined")
+
+# Generate table --> do not change
+pander(distinct(final.table2, Term, .keep_all= TRUE))
 ```
 

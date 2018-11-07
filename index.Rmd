@@ -11,7 +11,7 @@ description: "This is a glossary to be included in the Loss Data Analytics onlin
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(comment = NA, echo=FALSE)
+knitr::opts_chunk$set(comment = NA, echo = FALSE, message = FALSE)
 ```
 
 # Making Changes
