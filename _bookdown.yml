@@ -2,4 +2,6 @@ book_filename: "LDAGlossary"
 output_dir: "docs"
 rmd_files: ["index.Rmd", 
            "Chapters/TermDescriptions.Rmd",
-           "Chapters/ChapterDefined.Rmd"]
+           "Chapters/ChapterDefined.Rmd",
+           "Chapters/TableOfDistributions.Rmd"
+           ]

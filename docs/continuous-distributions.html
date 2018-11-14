@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="terms-and-descriptions-by-chapter.html">
-<link rel="next" href="table-of-distributions.html">
+<link rel="prev" href="terms-and-chapter-first-defined.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -75,7 +75,7 @@
 <li class="chapter" data-level="2.2" data-path="terms-and-descriptions-by-chapter.html"><a href="terms-and-descriptions-by-chapter.html#chapter-2-frequency-modeling"><i class="fa fa-check"></i><b>2.2</b> Chapter 2 Frequency Modeling</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="terms-and-chapter-first-defined.html"><a href="terms-and-chapter-first-defined.html"><i class="fa fa-check"></i><b>3</b> Terms and Chapter First Defined</a></li>
-<li class="chapter" data-level="4" data-path="table-of-distributions.html"><a href="table-of-distributions.html"><i class="fa fa-check"></i><b>4</b> Table of Distributions</a></li>
+<li class="chapter" data-level="4" data-path="continuous-distributions.html"><a href="continuous-distributions.html"><i class="fa fa-check"></i><b>4</b> Continuous Distributions</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -96,142 +96,51 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="terms-and-chapter-first-defined" class="section level1">
-<h1><span class="header-section-number">3</span> Terms and Chapter First Defined</h1>
-<table style="width:78%;">
-<colgroup>
-<col width="45%" />
-<col width="31%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Term</th>
-<th align="center">Chapter first defined</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">analytics</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">binomial distribution</td>
-<td align="center">2</td>
-</tr>
-<tr class="odd">
-<td align="center">business analytics</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">business intelligence</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">casualty insurance</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">claim</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">claims adjustment</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">claims leakage</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">data science</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">expected cost</td>
-<td align="center">2</td>
-</tr>
-<tr class="odd">
-<td align="center">experience rating or merit rating</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">fitted distribution</td>
-<td align="center">NA</td>
-</tr>
-<tr class="odd">
-<td align="center">frequency</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">likelihood</td>
-<td align="center">NA</td>
-</tr>
-<tr class="odd">
-<td align="center">loss reserving</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">maximum likelihood estimator (mle)</td>
-<td align="center">2</td>
-</tr>
-<tr class="odd">
-<td align="center">mixture</td>
-<td align="center">NA</td>
-</tr>
-<tr class="even">
-<td align="center">negative binomial distribution</td>
-<td align="center">NA</td>
-</tr>
-<tr class="odd">
-<td align="center">nonlife or general insurance</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">parameter</td>
-<td align="center">NA</td>
-</tr>
-<tr class="odd">
-<td align="center">Pearson chi-square statistic</td>
-<td align="center">NA</td>
-</tr>
-<tr class="even">
-<td align="center">poisson distribution</td>
-<td align="center">2</td>
-</tr>
-<tr class="odd">
-<td align="center">property insurance</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">pure premium or loss cost</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">ratemaking</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">rating variables</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">risk</td>
-<td align="center">NA</td>
-</tr>
-<tr class="even">
-<td align="center">severity</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">short-term</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">underwriting</td>
-<td align="center">1</td>
-</tr>
-</tbody>
-</table>
+<div id="continuous-distributions" class="section level1">
+<h1><span class="header-section-number">4</span> Continuous Distributions</h1>
+$$ {
+<span class="math display">\[\begin{matrix}
+\begin{array}{l|cccccc}\hline
+\hline
+      \text{Name} &amp; \text{Probability Density}  &amp;       \text{Mean} &amp; \text{Variance } \sigma^2 &amp; \text{Moments } \mu_k&#39;=\mathrm{E~}X^k &amp; \mathrm{E~}(X\wedge x)^k &amp; \text{Moment Generating} \\
+
+           &amp; \text{Function f(x)}  &amp; \mu=\mathrm{E~}X &amp; \mathrm{E~}(X-\mu)^2 &amp; \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &amp;            &amp;\text{Function } M(t)=\mathrm{E~}e^{tX} \\
+\hline
+   \text{Uniform} &amp; \frac{1}{\beta-\alpha} &amp; \frac{\beta+\alpha}{2} &amp; \frac{(\beta-\alpha)^2}{12} &amp; \mu_k=0 \text{ for k odd} &amp;            &amp; \frac{e^{\beta t}-e^{\alpha t}}{(\beta-\alpha)t} \\
+
+           &amp; -\infty&lt;\alpha, &lt;\beta&lt;\infty &amp;  &amp; &amp; \mu_k=\frac{(\beta-\alpha)^k}{2^k(k+1)} \text { for k even} &amp;            &amp; \\
+\hline
+    \text{Normal} &amp; \frac{1}{\sqrt{2\pi}\sigma}\exp\left( -\frac{(x-\mu)^2}{2\sigma^2}\right)  &amp;     \mu &amp; \sigma^2 &amp; \mu_k=0 \text{ for k odd} &amp;            &amp; \exp(\mu t+\sigma^2~t^2/2) \\
+
+           &amp; -\infty&lt;\mu&lt;\infty, \sigma&gt;0  &amp;            &amp;            &amp; \mu_k=\frac{k!\sigma^k}{(k/2)!2^{k/2}} \text{ for k even} &amp;            &amp;            \\
+\hline
+\text{Exponential} &amp; \frac{1}{\theta}e^{-x/\theta} &amp;  \theta &amp; \theta^2 &amp; \mu_k&#39;=\theta^k \Gamma (k+1) &amp; \theta^k\Gamma (k+1)\Gamma (k+1;x/\theta) &amp; \frac{1}{1-\theta~t} \\
+
+           &amp; \lambda&gt;0 &amp;            &amp;            &amp;            &amp; &amp; +x^k e^{-x/\theta} &amp; \\
+\hline
+     \text{Gamma} &amp; \frac{1}{\theta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\theta} &amp; \alpha~\theta &amp; \alpha~\theta^2 &amp; \mu_k&#39;=\frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)} &amp; \frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)}\Gamma(k+\alpha; x/\theta) &amp; \frac{1}{1-\theta t)^{\alpha}} \\
+
+           &amp; \theta&gt;0 \text{ , } \alpha&gt;0 &amp;            &amp;            &amp; &amp; +x^k[1-\Gamma(\alpha; x/\theta)] &amp; \\
+\hline
+      \text{Beta} &amp; \frac{1}{B(a,b)} u^a(1-u)^{b-1}\frac{\theta}{x}, &amp; \frac{a \theta}{a+b} &amp; \frac{ab\theta^2}{(a+b+1)(a+b)^2} &amp; \mu_k&#39;=\theta^k \frac{B(k+a,b)}{B(a,b)} &amp; \text{Not useful} &amp; \text{Not useful} \\
+
+           &amp; u=x/\theta ,  a&gt;0 , b&gt;0 &amp; &amp; &amp; &amp;            &amp;            \\
+\hline
+    \text{Cauchy} &amp; \frac{1}{\pi\beta}[1+\left( \frac{x-\alpha}{\beta}\right)^2]^{-1} &amp;   \text{Does not} &amp; \text{Does not exist} &amp; \text{Does not exist} &amp; \text{Does not exist} &amp; \text{Does not exist} \\
+
+           &amp; -\infty &lt;\alpha &lt;\infty, \beta&gt;0 &amp;      \text{exist} &amp;            &amp;            &amp;            &amp;            \\
+\hline
+ \text{Lognormal} &amp;    &amp; \exp(\mu+ &amp; \exp(2\mu +2\sigma^2)- &amp; \mu_k&#39;=\exp(k\mu+k\sigma^2) &amp; \exp(k\mu+k\sigma^2) &amp; \text{Not useful} \\
+
+           &amp; \frac{1}{x\sqrt{2\pi}\sigma}\exp\left( -\frac{(\ln x-\mu)^2}{2\sigma^2}\right)  &amp; \sigma^2/2) &amp; \exp(2\mu+\sigma^2) &amp; &amp; \Phi\left( \frac{lnx-\mu-k\sigma^2}{\sigma}\right) &amp;            \\
+
+           &amp; -\infty &lt;\mu &lt;\infty, \sigma&gt;0 &amp;            &amp;            &amp;            &amp;            &amp; +x^k(1-F(x)) &amp;            \\
+\hline
+    \text{Pareto} &amp; \frac{\alpha \theta^{\alpha}}{x^{\alpha+1}} \text{ , } \alpha&gt;0 &amp; \frac{\alpha\theta}{\alpha-1} &amp; \frac{\alpha\theta^2}{\alpha-2}-\left( \frac{\alpha \theta}{\alpha-1}\right)^2 &amp; \mu_k&#39;=\frac{\alpha\theta^k}{\alpha-k} &amp; \frac{\alpha\theta^k}{\alpha-k}-\frac{k\theta^{\alpha}}{(\alpha-k)x^{\alpha-k}} &amp; \text{Does not exist} \\
+\hline
+\end{array}
+\end{matrix}\]</span>
+<p>} $$</p>
 
 </div>
             </section>
@@ -239,8 +148,8 @@
           </div>
         </div>
       </div>
-<a href="terms-and-descriptions-by-chapter.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="table-of-distributions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="terms-and-chapter-first-defined.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
