@@ -1,6 +1,17 @@
-# Terms and Descriptions by Chapter
+# Glossary
+*Chapter Preview*.
 
-## Chapter 1 Introduction to Loss Data Analytics
+## Making Changes to Terms and Definitions
+* First, open up the issues tab on our repository on GitHub [here](https://github.com/alyaanuval/LDAGlossary/issues).
+* Click on "create an issue".
+* Indicate which chapters you want to make changes to in the title.
+* Specify the terms and definitions you wish to change, add or remove.
+* Click "Submit new issue".
+
+## Terms and Descriptions by Chapter
+Detailed purpose.
+
+### Chapter 1 Introduction to Loss Data Analytics
 
 ```{r}
 library(pander)
@@ -12,7 +23,7 @@ names(final.table1.1) <- c("Term", "Description")
 pander(final.table1.1)
 ```
 
-## Chapter 2 Frequency Modeling
+### Chapter 2 Frequency Modeling
 
 ```{r}
 chapter2 <- read.csv("~/R project/LDAGlossary/csv/Chapter2.csv", header=TRUE,

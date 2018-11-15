@@ -1,4 +1,5 @@
 # Table of Distributions
+Detailed Purpose.
 
 \small
 \begin{matrix}

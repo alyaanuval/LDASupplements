@@ -1,4 +1,4 @@
-# LDAGlossary
+# LDASupplements
 
 ## Making Changes to Terms and Definitions
 * First, open up the issues tab on our repository on GitHub [here](https://github.com/alyaanuval/LDAGlossary/issues).

@@ -2,8 +2,9 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: section
       before: |
-        <li><a href="./">Glossary</a></li>
+        <li><a href="./">Supplements for Loss Data Analytics</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]

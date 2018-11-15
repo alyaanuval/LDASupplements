@@ -1,4 +1,5 @@
-# Terms and Chapter First Defined
+## Terms and Chapter First Defined
+Detailed purpose.
 
 ```{r}
 # Chapter 1
@@ -21,4 +22,3 @@ names(final.table2) <- c("Term", "Chapter first defined")
 # Generate table --> do not change
 pander(distinct(final.table2, Term, .keep_all= TRUE))
 ```
-

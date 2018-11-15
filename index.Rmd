@@ -1,5 +1,5 @@
 --- 
-title: "Glossary for Loss Data Analytics"
+title: "Supplements for Loss Data Analytics"
 author: "An open text authored by the Actuarial Community"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -7,16 +7,11 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a glossary to be included in the Loss Data Analytics online text"
+description: "Supplementary material for the Loss Data Analytics online text. Includes a glossary, table of distributions and notation conventions."
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(comment = NA, echo = FALSE, message = FALSE)
 ```
 
-# Making Changes to Terms and Definitions
-* First, open up the issues tab on our repository on GitHub [here](https://github.com/alyaanuval/LDAGlossary/issues).
-* Click on "create an issue".
-* Indicate which chapters you want to make changes to in the title.
-* Specify the terms and definitions you wish to change, add or remove.
-* Click "Submit new issue".
+# Purpose

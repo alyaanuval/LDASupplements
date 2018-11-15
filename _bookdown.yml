@@ -1,7 +1,8 @@
-book_filename: "LDAGlossary"
+book_filename: "LDASupplements"
 output_dir: "docs"
 rmd_files: ["index.Rmd", 
            "Chapters/TermDescriptions.Rmd",
            "Chapters/ChapterDefined.Rmd",
-           "Chapters/TableOfDistributions.Rmd"
+           "Chapters/TableOfDistributions.Rmd",
+           "Chapters/NotationConventions.Rmd"
            ]
