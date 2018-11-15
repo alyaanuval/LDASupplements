@@ -15,7 +15,7 @@ Detailed purpose.
 
 ```{r}
 library(pander)
-chapter1 <- read.csv("~/R project/LDAGlossary/csv/Chapter1.csv", header=TRUE,
+chapter1 <- read.csv("~/R project/LDASupplements/csv/Chapter1.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
 final.table1.1 <- as.data.frame(table1.1)
@@ -26,7 +26,7 @@ pander(final.table1.1)
 ### Chapter 2 Frequency Modeling
 
 ```{r}
-chapter2 <- read.csv("~/R project/LDAGlossary/csv/Chapter2.csv", header=TRUE,
+chapter2 <- read.csv("~/R project/LDASupplements/csv/Chapter2.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.2 <- cbind(chapter2[, 1], chapter2[, 2])
 final.table1.2 <- as.data.frame(table1.2)
