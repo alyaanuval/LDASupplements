@@ -24,7 +24,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Glossary for Loss Data Analytics},
+            pdftitle={Supplements for Loss Data Analytics},
             pdfauthor={An open text authored by the Actuarial Community},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -76,7 +76,7 @@
 }
 
 \setlength{\droptitle}{-2em}
-  \title{Glossary for Loss Data Analytics}
+  \title{Supplements for Loss Data Analytics}
   \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
   \author{An open text authored by the Actuarial Community}
@@ -84,7 +84,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-11-07}
+  \date{2018-11-15}
 
 \usepackage{booktabs}
 
@@ -109,18 +109,20 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\chapter{Making Changes}\label{making-changes}
+\chapter{Purpose}\label{purpose}
 
-First, open up our repository on GitHub
-\href{https://github.com/alyaanuval/LDAGlossary/issues}{here}.
+\chapter{Glossary}\label{glossary}
 
-\section{Changing terms within exsiting
-chapters}\label{changing-terms-within-exsiting-chapters}
+\emph{Chapter Preview}.
+
+\section{Making Changes to Terms and
+Definitions}\label{making-changes-to-terms-and-definitions}
 
 \begin{itemize}
 \tightlist
 \item
-  Click on the issues tab.
+  First, open up the issues tab on our repository on GitHub
+  \href{https://github.com/alyaanuval/LDAGlossary/issues}{here}.
 \item
   Click on ``create an issue''.
 \item
@@ -131,26 +133,12 @@ chapters}\label{changing-terms-within-exsiting-chapters}
   Click ``Submit new issue''.
 \end{itemize}
 
-\section{Uploading new chapters}\label{uploading-new-chapters}
-
-\begin{itemize}
-\tightlist
-\item
-  Click on the issues tab.
-\item
-  Click on ``create an issue''.
-\item
-  Indicate which chapters you want to make changes to in the title.
-\item
-  Click on ``selecting them'' and upload the excel file and csv file.
-\item
-  Click ``Submit new issue''.
-\end{itemize}
-
-\chapter{Terms and Descriptions by
+\section{Terms and Descriptions by
 Chapter}\label{terms-and-descriptions-by-chapter}
 
-\section{Chapter 1 Introduction to Loss Data
+Detailed purpose.
+
+\subsection{Chapter 1 Introduction to Loss Data
 Analytics}\label{chapter-1-introduction-to-loss-data-analytics}
 
 \begin{longtable}[]{@{}cc@{}}
@@ -277,7 +265,7 @@ premiums\strut
 \bottomrule
 \end{longtable}
 
-\section{Chapter 2 Frequency
+\subsection{Chapter 2 Frequency
 Modeling}\label{chapter-2-frequency-modeling}
 
 \begin{longtable}[]{@{}cc@{}}
@@ -370,8 +358,10 @@ to check for the goodness of fit of the fitted distribution\strut
 \bottomrule
 \end{longtable}
 
-\chapter{Terms and Chapter First
+\section{Terms and Chapter First
 Defined}\label{terms-and-chapter-first-defined}
+
+Detailed purpose.
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
@@ -534,6 +524,202 @@ underwriting\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
+
+\chapter{Table of Distributions}\label{table-of-distributions}
+
+Detailed Purpose.
+
+\[
+{\small
+\begin{matrix}
+\begin{array}{|l|cccccc|}
+\hline
+      \text{Name} & \text{Probability Density}  &       \text{Mean} & \text{Variance } \sigma^2 & \text{Moments } \mu_k'=\mathrm{E~}X^k & \mathrm{E~}(X\wedge x)^k & \text{Moment Generating} \\
+           & \text{Function f(x)}  & \mu=\mathrm{E~}X & \mathrm{E~}(X-\mu)^2 & \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &            & \text{Function M(t)}=\mathrm{E~}e^{tX} \\
+\hline
+   \text{Uniform} & \frac{1}{\beta-\alpha} & \frac{\beta+\alpha}{2} & \frac{(\beta-\alpha)^2}{12} & \mu_k=0 \text{ for k odd} &            & \frac{e^{\beta t}-e^{\alpha t}}{(\beta-\alpha)t} \\
+           & -\infty<\alpha, <\beta<\infty &  & & \mu_k=\frac{(\beta-\alpha)^k}{2^k(k+1)} \text{ for k even} &            & \\
+\hline
+    \text{Normal} & \frac{1}{\sqrt{2\pi}\sigma}\exp\left( -\frac{(x-\mu)^2}{2\sigma^2}\right)  &     \mu & \sigma^2 & \mu_k=0 \text{ for k odd} &            & \exp(\mu t+\sigma^2~t^2/2) \\
+           & -\infty<\mu<\infty, \sigma>0  &            &            & \mu_k=\frac{k!\sigma^k}{(k/2)!2^{k/2}} \text{ for k even} &            &            \\
+\hline
+\text{Exponential} & \frac{1}{\theta}e^{-x/\theta} &  \theta & \theta^2 & \mu_k'=\theta^k \Gamma (k+1) & \theta^k\Gamma (k+1)\Gamma (k+1;x/\theta) & \frac{1}{1-\theta~t} \\
+           & \lambda>0 &            &            &            & +x^k e^{-x/\theta} & \\
+\hline
+     \text{Gamma} & \frac{1}{\theta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\theta} & \alpha~\theta & \alpha~\theta^2 & \mu_k'=\frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)} & \frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)}\Gamma(k+\alpha; x/\theta) & \frac{1}{(1-\theta t)^{\alpha}} \\
+           & \theta>0, \alpha>0 &            &            & & +x^k[1-\Gamma(\alpha; x/\theta)] & \\
+\hline
+      \text{Beta} & \frac{1}{B(a,b)} u^a(1-u)^{b-1}\frac{\theta}{x}, & \frac{a \theta}{a+b} & \frac{ab\theta^2}{(a+b+1)(a+b)^2} & \mu_k'=\theta^k \frac{B(k+a,b)}{B(a,b)} & \text{Not useful} & \text{Not useful} \\
+           & u=x/\theta ,  a>0 , b>0 & & & &            &            \\
+\hline
+    \text{Cauchy} & \frac{1}{\pi\beta}[1+\left( \frac{x-\alpha}{\beta}\right)^2]^{-1} &   \text{Does not} & \text{Does not exist} & \text{Does not exist} & \text{Does not exist} & \text{Does not exist} \\
+           & -\infty <\alpha <\infty, \beta>0 &      \text{exist} &            &            &            &            \\
+\hline
+ \text{Lognormal} &    & \exp(\mu+ & \exp(2\mu +2\sigma^2)- & \mu_k'=\exp(k\mu+k\sigma^2) & \exp(k\mu+k\sigma^2) & \text{Not useful} \\
+           & \frac{1}{x\sqrt{2\pi}\sigma}\exp\left( -\frac{(\ln x-\mu)^2}{2\sigma^2}\right)  & \sigma^2/2) & \exp(2\mu+\sigma^2) & & \Phi\left( \frac{lnx-\mu-k\sigma^2}{\sigma}\right) &            \\
+           & -\infty <\mu <\infty, \sigma>0 &            &            &            & +x^k(1-F(x)) &            \\
+\hline
+    \text{Pareto} & \frac{\alpha \theta^{\alpha}}{x^{\alpha+1}}, \alpha>0 & \frac{\alpha\theta}{\alpha-1} & \frac{\alpha\theta^2}{\alpha-2}-\left( \frac{\alpha \theta}{\alpha-1}\right)^2 & \mu_k'=\frac{\alpha\theta^k}{\alpha-k} & \frac{\alpha\theta^k}{\alpha-k}-\frac{k\theta^{\alpha}}{(\alpha-k)x^{\alpha-k}} & \text{Does not exist} \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]
+
+\chapter{Conventions for Notation}\label{S:NotationConvention}
+
+\emph{Chapter Preview}. \textbf{Loss Data Analytics} will serve as a
+bridge between actuarial problems and methods and widely accepted
+statistical concepts and tools. Thus, the notation should be consistent
+with standard usage employed in probability and mathematical statistics.
+See, for example, \citep{halperin1965recommended} for a description of
+one standard.
+
+\section{General Conventions}\label{S:General}
+
+\begin{itemize}
+\tightlist
+\item
+  Random variables are denoted by upper-case italicized Roman letters,
+  with \(X\) or \(Y\) denoting a claim size variable, \(N\) a claim
+  count variable, and \(S\) an aggregate loss variable. Realizations of
+  random variables are denoted by corresponding lower-case italicized
+  Roman letters, with \(x\) or \(y\) for claim sizes, \(n\) for a claim
+  count, and \(s\) for an aggregate loss.
+\item
+  Probability events are denoted by upper-case Roman letters, such as
+  \(\Pr(\mathrm{A})\) for the probability that an outcome in the event
+  `'A'' occurs.
+\item
+  Cumulative probability functions are denoted by \(F(z)\) and
+  probability density functions by the associated lower-case Roman
+  letter: \(f(z)\).
+\item
+  For distributions, parameters are denoted by lower-case Greek letters.
+  A caret or `'hat'' indicates a sample estimate of the corresponding
+  population parameter. For example, \(\hat{\beta}\) is an estimate of
+  \(\beta\) .
+\item
+  The arithmetic mean of a set of numbers, say, \(x_1, \ldots, x_n\), is
+  usually denoted by \(\bar{x}\); the use of \(x\), of course, is
+  optional.
+\item
+  Use upper-case boldface Roman letters to denote a matrix other than a
+  vector. Use lower-case boldface Roman letters to denote a (column)
+  vector. Use a superscript prime `'\(\prime\)'' for transpose. For
+  example, \(\mathbf{x}^{\prime} \mathbf{A} \mathbf{x}\) is a quadratic
+  form.
+\item
+  Acronyms are to be used sparingly, given the international focus of
+  our audience. Introduce acronyms commonly used in statistical
+  nomenclature but limit the number of acronyms introduced. For example,
+  \emph{pdf} for probability density function is useful but \emph{GS}
+  for Gini statistic is not.
+\end{itemize}
+
+\section{Abbreviations}\label{S:Abbreviations}
+
+Here is a list of abbreviations that we adopt. We italicize these
+acronyms. For example, we can discuss the goodness of fit in terms of
+the \emph{AIC} criterion.
+
+\[
+\begin{array}{ll}
+\hline
+AIC & \text{Akaike information criterion} \\
+BIC & \text{(Schwarz) Bayesian information criterion} \\
+cdf & \text{cumulative distribution function} \\
+df & \text{degrees of freedom} \\
+iid & \text{independent and identically distributed} \\
+glm & \text{generalized linear model} \\
+mle & \text{maximum likelihood estimate}\\
+ols & \text{ordinary least squares} \\
+pdf & \text{probability density function} \\
+pf  & \text{probability  function} \\
+pmf & \text{probability mass function} \\
+rv & \text{random variable} \\ \hline
+\end{array}
+\]
+
+\section{Common Statistical Symbols and Operators}\label{S:StatSymbols}
+
+Here is a list of commonly used statistical symbols and operators,
+including the latex code that we use to generate them (in the parens).
+
+\[
+\begin{array}{cl}  \hline
+I(\cdot) & \text{binary indicator operator (}I\text{). For example, }I(A) \text{ is one if an outcome in event} \\
+& \ \ \ \ \  A \text{ occurs and is 0 otherwise.} \\
+\Pr(\cdot) & \text{probability }(\backslash{\tt{Pr}}) \\
+\mathrm{E}(\cdot)  & {\text{expectation operator }} (\backslash{\tt{mathrm\{E\}}}). {\text{ For example, }} \mathrm{E}(X)=\mathrm{E}~X {\text{ is the }} \\
+& \ \ \ \ \ {\text{expected value of the random variable }}X,{\text{ commonly denoted by }}\mu. \\
+\mathrm{Var}(\cdot)  & \text{variance operator }(\backslash{\tt{mathrm\{Var\}}}). \text{For example, } \mathrm{Var}(X)=\mathrm{Var}~X\text{ is the} \\
+& \ \ \ \ \  \text{ variance of the random variable } X, \text{commonly denoted by } \sigma^2. \\
+\mu_k = \mathrm{E}~X^k & \text{kth moment of the random variable X. For k=1, use }\mu = \mu_1. \\
+\mathrm{Cov}(\cdot,\cdot)  & \text{covariance operator } (\backslash{\tt{mathrm\{Cov\}}}).\text{ For example, } \\
+& \ \ \ \ \ \mathrm{Cov}(X,Y)=\mathrm{E}\left\{(X -\mathrm{E}~X)(Y-\mathrm{E}~Y)\right\}  =\mathrm{E}(XY) -(\mathrm{E}~X)(\mathrm{E}~Y)\\
+& \ \ \ \ \  \text{ is the covariance between random variables }X\text{ and }Y. \\
+\mathrm{E}(X | \cdot)  & \text{conditional expectation operator. For example, }\mathrm{E}(X |Y=y) \text{ is the}\\
+& \ \ \ \ \   \text{ conditional expected value of a random variable }X\text{ given that the random variable }Y\text{ equals y. }\\
+\Phi(\cdot) & \text{standard normal cumulative distribution function }(\backslash{\tt{Phi}})\\
+\phi(\cdot) & \text{standard normal probability density function }(\backslash{\tt{phi}})\\
+\sim & \text{means is distributed as }(\backslash{\tt{sim}}). \text{ For example, }X\sim F \text{ means that the } \\
+& \ \ \ \ \  \text{random variable } x \text{ has distribution function }F. \\
+se(\hat{\beta}) & \text{standard error of the parameter estimate }\hat{\beta} ~ (\backslash{\tt{hat\{}}\backslash{\tt{beta\}}}), \text{ usually }\\
+& \ \ \ \ \  \text{ an estimate of the standard deviation of }\hat{\beta},\text{ which is }\sqrt{Var(\hat{\beta})}. \\
+H_0 &  \text{null hypothesis} \\
+H_a \text{ or }H_1 & \text{alternative hypothesis} \\
+\hline
+\end{array}
+\]
+
+\section{Common Mathematical Symbols and Functions}\label{S:Symbols}
+
+Here is a list of commonly used mathematical symbols and functions,
+including the latex code that we use to generate them (in the parens).
+
+\[
+\begin{array}{cl}
+\hline
+\equiv & \text{identity, equivalence }(\backslash\tt{equiv}) \\
+a:=b   & \text{defines a in terms of }b \\
+\implies     & \text{implies }(\backslash\tt{implies})\\
+\iff  & \text{if and only if }(\backslash\tt{iff})\\
+\to, \longrightarrow & \text{converges to }(\backslash\tt{to}, \backslash\tt{longrightarrow}) \\
+\mathbb{N} & \text{natural numbers }1,2,\ldots ( \backslash\tt{mathbb\{N\}}) \\
+\mathbb{R} & \text{real numbers }(\backslash\tt{mathbb\{R\}})\\
+\in        & \text{belongs to }(\backslash\tt{in}) \\
+\notin     & \text{does not belong to }(\backslash\tt{notin}) \\
+\subseteq  & \text{is a subset of }(\backslash\tt{subseteq}) \\
+\subset    & \text{is a proper subset of }(\backslash\tt{subset}) \\
+\cup       & \text{union  }(\backslash\tt{cup}) \\
+\cap       & \text{intersection  }(\backslash\tt{cap}) \\
+\emptyset  & \text{empty set }(\backslash\tt{emptyset})  \\
+A^{c}      & \text{complement of }A   \\
+g*f        & \text{convolution }(g*f)(x)=\int_{-\infty}^{\infty}g(y)f(x-y)dy \\
+\exp       & \text{exponential }(\backslash\tt{exp}) \\
+\log       & \text{natural logarithm }(\backslash\tt{log})\\
+\log_a     & \text{logarithm to the base }a \\
+!          & \text{factorial} \\
+\text{sgn}(x)    & \text{sign of x}(\tt{sgn}) \\
+\lfloor x\rfloor & \text{integer part of x, that is, largest integer }\leq x \\
+                 & (\backslash\tt{lfloor}, \backslash\tt{rfloor}) \\
+|x|        & \text{absolute value of scalar }x \\
+\varGamma(x) & \text{gamma (generalized factorial) function } (\backslash\tt{varGamma}),\\
+           & \text{satisfying }\varGamma(x+1)=x\varGamma(x) (\tt{\varGamma}) \\
+B(x,y)     & \text{beta function, }\varGamma(x)\varGamma(y)/\varGamma(x+y) \\
+\hline
+\end{array}
+\]
+
+\section{Further Readings}\label{further-readings}
+
+To make connections to other literatures, see \citep{abadir2002notation}
+\url{http://www.janmagnus.nl/misc/notation.zip} for a summary of
+notation from the econometrics perspective. This reference has a
+terrific feature that many latex symbols are defined in the article.
+Further, there is a long history of discussion and debate surrounding
+actuarial notation; see \citep{boehm1975thoughts} for one contribution.
 
 \bibliography{book.bib,packages.bib}
 

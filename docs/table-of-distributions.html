@@ -106,48 +106,74 @@
 <div id="table-of-distributions" class="section level1">
 <h1><span class="header-section-number">3</span> Table of Distributions</h1>
 <p>Detailed Purpose.</p>
-
 <span class="math display">\[\begin{matrix}
-\begin{array}{l|cccccc}\hline
+\begin{array}{|l|cccccc|}
 \hline
       \text{Name} &amp; \text{Probability Density}  &amp;       \text{Mean} &amp; \text{Variance } \sigma^2 &amp; \text{Moments } \mu_k&#39;=\mathrm{E~}X^k &amp; \mathrm{E~}(X\wedge x)^k &amp; \text{Moment Generating} \\
-
-           &amp; \text{Function f(x)}  &amp; \mu=\mathrm{E~}X &amp; \mathrm{E~}(X-\mu)^2 &amp; \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &amp;            &amp;\text{Function } M(t)=\mathrm{E~}e^{tX} \\
+           &amp; \text{Function f(x)}  &amp; \mu=\mathrm{E~}X &amp; \mathrm{E~}(X-\mu)^2 &amp; \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &amp;            &amp; \text{Function M(t)}=\mathrm{E~}e^{tX} \\
 \hline
    \text{Uniform} &amp; \frac{1}{\beta-\alpha} &amp; \frac{\beta+\alpha}{2} &amp; \frac{(\beta-\alpha)^2}{12} &amp; \mu_k=0 \text{ for k odd} &amp;            &amp; \frac{e^{\beta t}-e^{\alpha t}}{(\beta-\alpha)t} \\
-
-           &amp; -\infty&lt;\alpha, &lt;\beta&lt;\infty &amp;  &amp; &amp; \mu_k=\frac{(\beta-\alpha)^k}{2^k(k+1)} \text { for k even} &amp;            &amp; \\
+           &amp; -\infty&lt;\alpha, &lt;\beta&lt;\infty &amp;  &amp; &amp; \mu_k=\frac{(\beta-\alpha)^k}{2^k(k+1)} \text{ for k even} &amp;            &amp; \\
 \hline
     \text{Normal} &amp; \frac{1}{\sqrt{2\pi}\sigma}\exp\left( -\frac{(x-\mu)^2}{2\sigma^2}\right)  &amp;     \mu &amp; \sigma^2 &amp; \mu_k=0 \text{ for k odd} &amp;            &amp; \exp(\mu t+\sigma^2~t^2/2) \\
-
            &amp; -\infty&lt;\mu&lt;\infty, \sigma&gt;0  &amp;            &amp;            &amp; \mu_k=\frac{k!\sigma^k}{(k/2)!2^{k/2}} \text{ for k even} &amp;            &amp;            \\
 \hline
 \text{Exponential} &amp; \frac{1}{\theta}e^{-x/\theta} &amp;  \theta &amp; \theta^2 &amp; \mu_k&#39;=\theta^k \Gamma (k+1) &amp; \theta^k\Gamma (k+1)\Gamma (k+1;x/\theta) &amp; \frac{1}{1-\theta~t} \\
-
-           &amp; \lambda&gt;0 &amp;            &amp;            &amp;            &amp; &amp; +x^k e^{-x/\theta} &amp; \\
+           &amp; \lambda&gt;0 &amp;            &amp;            &amp;            &amp; +x^k e^{-x/\theta} &amp; \\
 \hline
-     \text{Gamma} &amp; \frac{1}{\theta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\theta} &amp; \alpha~\theta &amp; \alpha~\theta^2 &amp; \mu_k&#39;=\frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)} &amp; \frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)}\Gamma(k+\alpha; x/\theta) &amp; \frac{1}{1-\theta t)^{\alpha}} \\
-
-           &amp; \theta&gt;0 \text{ , } \alpha&gt;0 &amp;            &amp;            &amp; &amp; +x^k[1-\Gamma(\alpha; x/\theta)] &amp; \\
+     \text{Gamma} &amp; \frac{1}{\theta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\theta} &amp; \alpha~\theta &amp; \alpha~\theta^2 &amp; \mu_k&#39;=\frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)} &amp; \frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)}\Gamma(k+\alpha; x/\theta) &amp; \frac{1}{(1-\theta t)^{\alpha}} \\
+           &amp; \theta&gt;0, \alpha&gt;0 &amp;            &amp;            &amp; &amp; +x^k[1-\Gamma(\alpha; x/\theta)] &amp; \\
 \hline
       \text{Beta} &amp; \frac{1}{B(a,b)} u^a(1-u)^{b-1}\frac{\theta}{x}, &amp; \frac{a \theta}{a+b} &amp; \frac{ab\theta^2}{(a+b+1)(a+b)^2} &amp; \mu_k&#39;=\theta^k \frac{B(k+a,b)}{B(a,b)} &amp; \text{Not useful} &amp; \text{Not useful} \\
-
            &amp; u=x/\theta ,  a&gt;0 , b&gt;0 &amp; &amp; &amp; &amp;            &amp;            \\
 \hline
     \text{Cauchy} &amp; \frac{1}{\pi\beta}[1+\left( \frac{x-\alpha}{\beta}\right)^2]^{-1} &amp;   \text{Does not} &amp; \text{Does not exist} &amp; \text{Does not exist} &amp; \text{Does not exist} &amp; \text{Does not exist} \\
-
            &amp; -\infty &lt;\alpha &lt;\infty, \beta&gt;0 &amp;      \text{exist} &amp;            &amp;            &amp;            &amp;            \\
 \hline
  \text{Lognormal} &amp;    &amp; \exp(\mu+ &amp; \exp(2\mu +2\sigma^2)- &amp; \mu_k&#39;=\exp(k\mu+k\sigma^2) &amp; \exp(k\mu+k\sigma^2) &amp; \text{Not useful} \\
-
            &amp; \frac{1}{x\sqrt{2\pi}\sigma}\exp\left( -\frac{(\ln x-\mu)^2}{2\sigma^2}\right)  &amp; \sigma^2/2) &amp; \exp(2\mu+\sigma^2) &amp; &amp; \Phi\left( \frac{lnx-\mu-k\sigma^2}{\sigma}\right) &amp;            \\
-
-           &amp; -\infty &lt;\mu &lt;\infty, \sigma&gt;0 &amp;            &amp;            &amp;            &amp;            &amp; +x^k(1-F(x)) &amp;            \\
+           &amp; -\infty &lt;\mu &lt;\infty, \sigma&gt;0 &amp;            &amp;            &amp;            &amp; +x^k(1-F(x)) &amp;            \\
 \hline
-    \text{Pareto} &amp; \frac{\alpha \theta^{\alpha}}{x^{\alpha+1}} \text{ , } \alpha&gt;0 &amp; \frac{\alpha\theta}{\alpha-1} &amp; \frac{\alpha\theta^2}{\alpha-2}-\left( \frac{\alpha \theta}{\alpha-1}\right)^2 &amp; \mu_k&#39;=\frac{\alpha\theta^k}{\alpha-k} &amp; \frac{\alpha\theta^k}{\alpha-k}-\frac{k\theta^{\alpha}}{(\alpha-k)x^{\alpha-k}} &amp; \text{Does not exist} \\
+    \text{Pareto} &amp; \frac{\alpha \theta^{\alpha}}{x^{\alpha+1}}, \alpha&gt;0 &amp; \frac{\alpha\theta}{\alpha-1} &amp; \frac{\alpha\theta^2}{\alpha-2}-\left( \frac{\alpha \theta}{\alpha-1}\right)^2 &amp; \mu_k&#39;=\frac{\alpha\theta^k}{\alpha-k} &amp; \frac{\alpha\theta^k}{\alpha-k}-\frac{k\theta^{\alpha}}{(\alpha-k)x^{\alpha-k}} &amp; \text{Does not exist} \\
 \hline
 \end{array}
 \end{matrix}\]</span>
+<!-- $$ -->
+<!-- {\small -->
+<!-- \begin{matrix} -->
+<!-- \begin{array}{|l|cccccc|} -->
+<!-- \hline -->
+<!--       \text{Name} & \text{Probability Density}  &       \text{Mean} & \text{Variance } \sigma^2 & \text{Moments } \mu_k'=\mathrm{E~}X^k & \mathrm{E~}(X\wedge x)^k & \text{Moment Generating} \\ -->
+<!--            & \text{Function f(x)}  & \mu=\mathrm{E~}X & \mathrm{E~}(X-\mu)^2 & \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &            & \text{Function M(t)}=\mathrm{E~}e^{tX} \\ -->
+<!-- \hline -->
+<!--    \text{Uniform} & \frac{1}{\beta-\alpha} & \frac{\beta+\alpha}{2} & \frac{(\beta-\alpha)^2}{12} & \mu_k=0 \text{ for k odd} &            & \frac{e^{\beta t}-e^{\alpha t}}{(\beta-\alpha)t} \\ -->
+<!--            & -\infty<\alpha, <\beta<\infty &  & & \mu_k=\frac{(\beta-\alpha)^k}{2^k(k+1)} \text{ for k even} &            & \\ -->
+<!-- \hline -->
+<!--     \text{Normal} & \frac{1}{\sqrt{2\pi}\sigma}\exp\left( -\frac{(x-\mu)^2}{2\sigma^2}\right)  &     \mu & \sigma^2 & \mu_k=0 \text{ for k odd} &            & \exp(\mu t+\sigma^2~t^2/2) \\ -->
+<!--            & -\infty<\mu<\infty, \sigma>0  &            &            & \mu_k=\frac{k!\sigma^k}{(k/2)!2^{k/2}} \text{ for k even} &            &            \\ -->
+<!-- \hline -->
+<!-- \text{Exponential} & \frac{1}{\theta}e^{-x/\theta} &  \theta & \theta^2 & \mu_k'=\theta^k \Gamma (k+1) & \theta^k\Gamma (k+1)\Gamma (k+1;x/\theta) & \frac{1}{1-\theta~t} \\ -->
+<!--            & \lambda>0 &            &            &            & +x^k e^{-x/\theta} & \\ -->
+<!-- \hline -->
+<!--      \text{Gamma} & \frac{1}{\theta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\theta} & \alpha~\theta & \alpha~\theta^2 & \mu_k'=\frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)} & \frac{\theta^k\Gamma(k+\alpha)}{\Gamma(\alpha)}\Gamma(k+\alpha; x/\theta) & \frac{1}{(1-\theta t)^{\alpha}} \\ -->
+<!--            & \theta>0, \alpha>0 &            &            & & +x^k[1-\Gamma(\alpha; x/\theta)] & \\ -->
+<!-- \hline -->
+<!--       \text{Beta} & \frac{1}{B(a,b)} u^a(1-u)^{b-1}\frac{\theta}{x}, & \frac{a \theta}{a+b} & \frac{ab\theta^2}{(a+b+1)(a+b)^2} & \mu_k'=\theta^k \frac{B(k+a,b)}{B(a,b)} & \text{Not useful} & \text{Not useful} \\ -->
+<!--            & u=x/\theta ,  a>0 , b>0 & & & &            &            \\ -->
+<!-- \hline -->
+<!--     \text{Cauchy} & \frac{1}{\pi\beta}[1+\left( \frac{x-\alpha}{\beta}\right)^2]^{-1} &   \text{Does not} & \text{Does not exist} & \text{Does not exist} & \text{Does not exist} & \text{Does not exist} \\ -->
+<!--            & -\infty <\alpha <\infty, \beta>0 &      \text{exist} &            &            &            &            \\ -->
+<!-- \hline -->
+<!--  \text{Lognormal} &    & \exp(\mu+ & \exp(2\mu +2\sigma^2)- & \mu_k'=\exp(k\mu+k\sigma^2) & \exp(k\mu+k\sigma^2) & \text{Not useful} \\ -->
+<!--            & \frac{1}{x\sqrt{2\pi}\sigma}\exp\left( -\frac{(\ln x-\mu)^2}{2\sigma^2}\right)  & \sigma^2/2) & \exp(2\mu+\sigma^2) & & \Phi\left( \frac{lnx-\mu-k\sigma^2}{\sigma}\right) &            \\ -->
+<!--            & -\infty <\mu <\infty, \sigma>0 &            &            &            & +x^k(1-F(x)) &            \\ -->
+<!-- \hline -->
+<!--     \text{Pareto} & \frac{\alpha \theta^{\alpha}}{x^{\alpha+1}}, \alpha>0 & \frac{\alpha\theta}{\alpha-1} & \frac{\alpha\theta^2}{\alpha-2}-\left( \frac{\alpha \theta}{\alpha-1}\right)^2 & \mu_k'=\frac{\alpha\theta^k}{\alpha-k} & \frac{\alpha\theta^k}{\alpha-k}-\frac{k\theta^{\alpha}}{(\alpha-k)x^{\alpha-k}} & \text{Does not exist} \\ -->
+<!-- \hline -->
+<!-- \end{array} -->
+<!-- \end{matrix} -->
+<!-- } -->
+<!-- $$ -->
 
 </div>
             </section>
