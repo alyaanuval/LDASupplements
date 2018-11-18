@@ -1,5 +1,5 @@
 ## Terms and Chapter First Defined
-Detailed purpose.
+Certain terms are defined multiple times throughout the book, so this list can help the reader refer to the chapter in which a term is first used and defined. The terms listed here are sorted in alphabetical order.
 
 ```{r}
 # Chapter 1

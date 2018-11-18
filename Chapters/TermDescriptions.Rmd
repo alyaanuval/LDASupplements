@@ -1,15 +1,17 @@
 # Glossary
-*Chapter Preview*.
+*Chapter Preview*. **Loss Data Analytics** contains specific insurance and probability terms which are important to understand the concepts in the book. This glossary can serve as a quick reference when the reader needs to recall a term's definition or location. We also include instructions if the reader wishes to suggest improvements to current definitions.
 
 ## Making Changes to Terms and Definitions
+When using the glossary, we encourage the reader to provide feedback regarding the terms and their definitions. For example, if the reader feels that there is a better definition for a particular term, the following instructions outline how the reader can suggest improvements.    
+
 * First, open up the issues tab on our repository on GitHub [here](https://github.com/alyaanuval/LDAGlossary/issues).
 * Click on "create an issue".
 * Indicate which chapters you want to make changes to in the title.
 * Specify the terms and definitions you wish to change, add or remove.
 * Click "Submit new issue".
 
-## Terms and Descriptions by Chapter
-Detailed purpose.
+## Terms and Definitions by Chapter
+Here is a list of important terms and their definitions listed according to the chapters in which they are found.
 
 ### Chapter 1 Introduction to Loss Data Analytics
 
@@ -19,7 +21,7 @@ chapter1 <- read.csv("~/R project/LDASupplements/csv/Chapter1.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
 final.table1.1 <- as.data.frame(table1.1)
-names(final.table1.1) <- c("Term", "Description")
+names(final.table1.1) <- c("Term", "Definition")
 pander(final.table1.1)
 ```
 
@@ -30,7 +32,7 @@ chapter2 <- read.csv("~/R project/LDASupplements/csv/Chapter2.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.2 <- cbind(chapter2[, 1], chapter2[, 2])
 final.table1.2 <- as.data.frame(table1.2)
-names(final.table1.2) <- c("Term", "Description")
+names(final.table1.2) <- c("Term", "Definition")
 pander(final.table1.2)
 ```
 

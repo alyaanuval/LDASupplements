@@ -1,5 +1,5 @@
 # Table of Distributions
-Detailed Purpose.
+*Chapter Preview*. This table of distributions is a summary of selected discrete and continuous probability distributions used throughout **Loss Data Analytics**.  
 
 \begin{matrix}
 \begin{array}{|l|cccccc|}
@@ -34,6 +34,7 @@ Detailed Purpose.
 \end{array}
 \end{matrix}
 
+<!-- Use this table for pdf build, above will not work -->
 <!-- $$ -->
 <!-- {\small -->
 <!-- \begin{matrix} -->

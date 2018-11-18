@@ -14,4 +14,11 @@ description: "Supplementary material for the Loss Data Analytics online text. In
 knitr::opts_chunk$set(comment = NA, echo = FALSE, message = FALSE)
 ```
 
-# Purpose
+# Preface {-}
+It is important to us that the reader has accessible resources that can support their learning when using the *Loss Data Analytics* book. *Supplements for Loss Data Analytics* aims to assist readers as they use the book.  
+
+This supplementary material includes:
+
+- a glossary,
+- a table of distributions and
+- conventions for consistent notation.

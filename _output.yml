@@ -6,7 +6,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Supplements for Loss Data Analytics</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/alyaanuval/LDASupplements" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
