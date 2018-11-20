@@ -1,0 +1,17 @@
+﻿What is being described,Description,"Chapter 
+first mentioned"
+claim,compensation from insurer to insured upon the occurrence of an insured event,
+frequency,how often claims arise or how often insured event occurs,2
+severity,amount of each payment for an insured event ,2
+expected cost,expected number of claims (frequency) times expected amount per claim (severity),2
+binomial distribution,"discrete frequency distribution and member of (a, b, 0) class; for number of successes in a fixed number of independent identical trials with binary outcomes",2
+negative binomial distribution,"discrete frequency distribution and member of (a, b, 0) class; for number of successes until we observe the  r-th failure in independent identical trials with binary outcomes",
+poisson distribution,"discrete frequency distribution and member of (a, b, 0) class; for independent events occuring at a constant rate in a certain time period",2
+likelihood,observed value of mass function,
+"maximum likelihood 
+estimator (mle)",to find parameter values that produce the largest likelihood,2
+risk,a unit covered by insurance,
+parameter,a numerical characteristic of a population,
+mixture,"mixture of subgroups, each with their own distribution",
+fitted distribution,distribution used for modeling the data,
+Pearson chi-square statistic,to check for the goodness of fit of the fitted distribution,

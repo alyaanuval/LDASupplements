@@ -1,8 +1,10 @@
 # Table of Distributions
 *Chapter Preview*. This table of distributions is a summary of selected discrete and continuous probability distributions used throughout **Loss Data Analytics**.  
 
+$$
+{\small
 \begin{matrix}
-\begin{array}{|l|cccccc|}
+\begin{array}{l|cccccc}
 \hline
       \text{Name} & \text{Probability Density}  &       \text{Mean} & \text{Variance } \sigma^2 & \text{Moments } \mu_k'=\mathrm{E~}X^k & \mathrm{E~}(X\wedge x)^k & \text{Moment Generating} \\
            & \text{Function f(x)}  & \mu=\mathrm{E~}X & \mathrm{E~}(X-\mu)^2 & \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &            & \text{Function M(t)}=\mathrm{E~}e^{tX} \\
@@ -33,6 +35,8 @@
 \hline
 \end{array}
 \end{matrix}
+}
+$$
 
 <!-- Use this table for pdf build, above will not work -->
 <!-- $$ -->

@@ -25,7 +25,7 @@
 <meta name="author" content="An open text authored by the Actuarial Community">
 
 
-<meta name="date" content="2018-11-17">
+<meta name="date" content="2018-11-19">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -72,6 +72,7 @@
 <li class="chapter" data-level="1.2" data-path="glossary.html"><a href="glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>1.2</b> Terms and Definitions by Chapter</a><ul>
 <li class="chapter" data-level="1.2.1" data-path="glossary.html"><a href="glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>1.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 <li class="chapter" data-level="1.2.2" data-path="glossary.html"><a href="glossary.html#chapter-2-frequency-modeling"><i class="fa fa-check"></i><b>1.2.2</b> Chapter 2 Frequency Modeling</a></li>
+<li class="chapter" data-level="1.2.3" data-path="glossary.html"><a href="glossary.html#chapter-5-aggregate-loss-models"><i class="fa fa-check"></i><b>1.2.3</b> Chapter 5 Aggregate Loss Models</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="glossary.html"><a href="glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>1.3</b> Terms and Chapter First Defined</a></li>
 </ul></li>
@@ -106,8 +107,10 @@
 <div id="table-of-distributions" class="section level1">
 <h1><span class="header-section-number">2</span> Table of Distributions</h1>
 <p><em>Chapter Preview</em>. This table of distributions is a summary of selected discrete and continuous probability distributions used throughout <strong>Loss Data Analytics</strong>.</p>
-<span class="math display">\[\begin{matrix}
-\begin{array}{|l|cccccc|}
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|cccccc}
 \hline
       \text{Name} &amp; \text{Probability Density}  &amp;       \text{Mean} &amp; \text{Variance } \sigma^2 &amp; \text{Moments } \mu_k&#39;=\mathrm{E~}X^k &amp; \mathrm{E~}(X\wedge x)^k &amp; \text{Moment Generating} \\
            &amp; \text{Function f(x)}  &amp; \mu=\mathrm{E~}X &amp; \mathrm{E~}(X-\mu)^2 &amp; \text{or } \mu_k=\mathrm{E~}(X-\mu)^k &amp;            &amp; \text{Function M(t)}=\mathrm{E~}e^{tX} \\
@@ -137,7 +140,9 @@
     \text{Pareto} &amp; \frac{\alpha \theta^{\alpha}}{x^{\alpha+1}}, \alpha&gt;0 &amp; \frac{\alpha\theta}{\alpha-1} &amp; \frac{\alpha\theta^2}{\alpha-2}-\left( \frac{\alpha \theta}{\alpha-1}\right)^2 &amp; \mu_k&#39;=\frac{\alpha\theta^k}{\alpha-k} &amp; \frac{\alpha\theta^k}{\alpha-k}-\frac{k\theta^{\alpha}}{(\alpha-k)x^{\alpha-k}} &amp; \text{Does not exist} \\
 \hline
 \end{array}
-\end{matrix}\]</span>
+\end{matrix}
+}
+\]</span></p>
 <!-- Use this table for pdf build, above will not work -->
 <!-- $$ -->
 <!-- {\small -->

@@ -1,0 +1,25 @@
+﻿What is being described,Description,"Chapter 
+first mentioned"
+analytics,"The process of using data to make decisions.
+This process involves gathering data, understanding models of uncertainty,making general inferences, and communicating results",1
+business intelligence,"May focus on processes of collecting data, often through databases and data warehouses",1
+business analytics,Utilizes tools and methods for statistical analyses of data,1
+data science,Can encompass broader applications in many scientific domains,1
+short-term,Contracts where the insurance coverage is typically provided for six months or a year,1
+property insurance,"In the US, policies such as renters and homeowners ",1
+casualty insurance,"In the US, a policy such as auto that covers medical damages to people ",1
+nonlife or general insurance,"In the rest of the world, property and casualty insurance are both known as nonlife or general insurance, to distinguish them from life insurance",1
+underwriting,"The process of classifying risks into homogenous categoriesand assigning policyholders to these categories, lies at the core of ratemaking. 
+Policyholders within a class have similar risk profiles and so are charged thesame insurance price",1
+ratemaking,Where analysts seek to determine the right price for the right risk,1
+"experience rating or 
+merit rating",Modifying premiums with claims history,1
+claims adjustment,"The process of determining coverage, legal liability, and settling claims ",1
+claims leakage,Dollars lost through claims management inefficiencies,1
+loss reserving,Setting aside money for unpaid claims ,1
+claim,"At a fundamental level, insurance companies accept premiums in exchange for promises to indemnify a policyholder upon the uncertain 
+occurrence of an insured event. This indemnification is known as a claim",1
+severity,"A positive amount is a key financial expenditure for an insurer. So, knowing only the claim amount summarizes the reimbursement to the policyholder",1
+frequency,How often claims arise,1
+pure premium or loss cost,The total severity divided by the number of claims ,1
+rating variables,Externally available variables useful in setting insurance rates and premiums,1

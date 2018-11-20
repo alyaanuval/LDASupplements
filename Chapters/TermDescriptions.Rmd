@@ -36,3 +36,13 @@ names(final.table1.2) <- c("Term", "Definition")
 pander(final.table1.2)
 ```
 
+### Chapter 5 Aggregate Loss Models
+
+```{r}
+chapter5 <- read.csv("~/R project/LDASupplements/csv/Chapter5.csv", header=TRUE,
+                       na.strings=c("."), stringsAsFactors=FALSE)
+table1.5 <- cbind(chapter5[, 1], chapter5[, 2])
+final.table1.5 <- as.data.frame(table1.5)
+names(final.table1.5) <- c("Term", "Definition")
+pander(final.table1.5)
+```

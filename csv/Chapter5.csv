@@ -1,0 +1,34 @@
+﻿What is being described,Description,Chapter first Mentioned
+aggregate claims,The sum of all claims observed in a period of time,2
+deductible,"A deductible is a parameter specified in the contract. Typically, losses below the deductible are paid by the policyholder whereas losses in excess of the deductible are the insurer's responsibility (subject to policy limits and coninsurance).",1
+coinsurance,"Coinsurance is an arrangement whereby the insured and insurer share the covered losses. Typically, a coinsurance parameter specified means that both parties receive a proportional share, e.g., 50%, of the loss.",1
+inflation,Inflation is a sustained increase in the general price level of goods and services over a period of time. ,5
+policy limit,A policy limit is the maximum value covered by a policy.,1
+line of business,A line of business is a classification of business written by insurers.,1
+individual risk model,A modeling approach for aggregate losses in which the loss from each individual contract is considered.,5
+collective risk model,A modeling approach for aggregate losses in which the aggregate loss is represented in terms of a frequency distribution and a severity distribution.,5
+coverage,Insurance coverage is the amount of risk or liability that is covered for an individual or entity by an insurance policy.,5
+exposure,"A measure of the rating units for which rates are applied to determine the premium. For example, exposures may be measured on a per unit basis (e.g. a family with auto insurance under one contract may have an exposure of 2 cars) or per $1,000 of value (e.g. homeowners insurance).",5
+frequency distribution,The random number of claims that occur under the collective risk model.,5
+severity distribution,The randomly distributed amount of each loss under the collective risk model.,5
+term life insurance,"A term life insurance policy is payable only if death of the insured occurs within a specified time, such as 5 or 10 years, or before a specified age.",5
+pure endowment,"A pure endowment is an insurance policy that is payable at the end of the policy period if the insured is still alive. If the insured has died, there is nothing paid in the form of benefits. ",5
+support (of a distribution),"The set of all outcomes for a random variable following some distribution. For example, exponentially distributed random variable X has support x>0.",5
+central limit theorem,"Given certain conditions, the arithmetic mean of a large number of replications of independent random variables, each with a finite mean and variance, will be approximately normally distributed, regardless of the underlying distribution.",5
+convolution,The convolution of probability distributions is the distribution corresponding to the addition of independent random variables.,5
+law of iterated expectations,"A decomposition of the expected value of a random variable into conditional components. Specifically, for random variables X and Y, E(X) = E[E(X|Y)].",5
+law of total variance,"A decomposition of the variance of a random variable into conditional components. Specifically, for random variables X and Y on the same probability space, Var(X) = E[Var(Y|X)] + Var[E(X|Y)].",5
+compound distribution,"A random variable follows a compound distribution if it is parameterized and contains at least one parameter that is itself a random variable. For example, the Tweedie distribution is a compound distribution.",5
+Tweedie distribution,"A compound distribution that is a Poisson sum of Gamma random variables. Because it can accommodate a discrete probability mass at zero and a continuous positive component, it is suitable for modeling aggregate insurance claims. ",5
+shape parameter,A numerical parameter of a parametric distribution affecting the shape of a distribution rather than simply shifting it (as a location parameter does) or stretching/shrinking it (as a scale parameter does). ,5
+scale parameter,"A numerical parameter of a parametric distribution that stretches/shrinks the distribution without changing its location or shape. The larger the scale parameter, the more spread out the distribution. The scale parameter is also the reciprocal of the rate parameter. For example, the normal distribution has scale parameter \sigma.",5
+exponential dispersion model,A set of distributions that represents a generalisation of the natural exponential family and also plays an important role in generalized linear models.,5
+generalized linear model,"Commonly known by the acronym GLM. An extension of the linear regression model where the dependent variable is a member of the linear exponential family. GLM encompasses linear, binary, count, and long-tailed, regressions all as special cases.",5
+exponential family,"A family of parametric distributions that are practical for modeling the underlying response variable in generalized linear models. This family includes the normal, Bernoulli, Poisson, and Tweedie distributions as special cases, among many others. ",5
+Monte Carlo simulation,A computerized statistical model that simulates the effects of various types of uncertainty.,5
+empirical distribution,"The empirical distribution is a non-parametric estimate of the underlying distribution of a random variable. It directly uses the data observations to construct the distribution, with each observed data point in a size-n sample having probability 1/n. ",5
+convergence (almost surely),"A type of stochastic convergence for a sequence of random variables X_1,…, X_n that approaches some other distribution as n approaches \infty. ",5
+ground-up loss,"The total amount of loss sustained before policy adjustments are made (i.e. before deductions are applied for coinsurance, deductibles, and/or policy limits.)",5
+per-loss basis,"Due to policy modifications (e.g. deductibles), not all losses that occur result in payment. The per-loss basis considers every loss that occurs, as opposed to the per-payment basis which considers only the losses that result in some payment to the insured. ",5
+per-payment basis,"Due to policy modifications (e.g. deductibles), not all losses that occur result in payment. The per-loss basis considers every loss that occurs, as opposed to the per-payment basis which considers only the losses that result in some payment to the insured. ",5
+memoryless,"The memoryless property means that a given probability distribution is independent of its history and what has already elapsed. Specifically, random variable X is memoryless if Pr(X > s+t | X >= s) = Pr(X > t). Note that it does not mean X > s+t and X >= s are independent events. ",5
